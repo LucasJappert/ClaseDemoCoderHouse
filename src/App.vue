@@ -9,11 +9,9 @@
 
 <script>
 import MiPrimerComponente from "./components/MiPrimerComponente.vue";
-import MiSegundoComponente from "./components/MiSegundoComponente.vue";
 export default {
   components: {
-    MiPrimerComponente,
-    MiSegundoComponente
+    MiPrimerComponente
   },
   data() {
     return {

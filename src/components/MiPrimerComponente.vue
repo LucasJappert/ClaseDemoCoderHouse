@@ -6,14 +6,24 @@
       ¡Este es mi primer componente!
       <br>
       <br>
-      En el cual implementaremos varias instancias de otro componente "Contador"
+      En el cual instanciaremos varias veces otro nuevo componente "Contador"
+      <br>
+      <br>
+      <div class="ContenedorBotones">
+        <Contador />
+        <Contador />
+        <Contador />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  
+import Contador from "./Contador.vue";
 export default {
+  components: {
+    Contador
+  },
   data() {
     return {
       
@@ -29,5 +39,10 @@ export default {
   padding: 5px;
   width:100%;
   box-sizing: border-box;
+}
+.ContenedorBotones{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
